@@ -68,13 +68,13 @@ def main():
     angleX = 0
     angleY = 0
     
-    pidX = PID(.4, 0.025, 1, setpoint = 0)        #initializing the PID for horizontal control in the X-plane
+    pidX = PID(.4, 0.025, 1, setpoint = 0)                    #initializing the PID for horizontal control in the X-plane
     pidX.sample_time = CLOCK
     
-    pidY = PID(.4, 0.025, 1, setpoint = 0)        #initializing the PID for horizontal control in the Y-plane
+    pidY = PID(.4, 0.025, 1, setpoint = 0)                    #initializing the PID for horizontal control in the Y-plane
     pidY.sample_time = CLOCK
     
-    pidZ = PID(.02, 0.001, 0.014, setpoint=50)    #initializing the PID for vertical control
+    pidZ = PID(.02, 0.001, 0.014, setpoint = targetHeight)    #initializing the PID for vertical control
     pidZ.sample_time = CLOCK
     
     xValues.append(position[0])
