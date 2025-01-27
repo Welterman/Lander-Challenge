@@ -4,7 +4,6 @@ Written and Tested by: William Rowe
 
 The main purpose of this code is to simulate a rocket flight given specified parameters.
 '''
-import FileUtils
 import math
 import time
 import matplotlib.pyplot as plt                                               #Graph Function
